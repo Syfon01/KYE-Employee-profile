@@ -192,3 +192,7 @@ fill:#B11E1E ;
     display: none!important;
  }
 }
+
+.bg-side{
+  background-color: #f3f4f7!important;
+}
