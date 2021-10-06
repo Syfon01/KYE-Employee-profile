@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="396.792" viewBox="0 0 512 396.792">
+  <g id="growth_4_" data-name="growth (4)" transform="translate(0 -57.604)">
+    <g id="Group_25257" data-name="Group 25257">
+      <g id="Group_25252" data-name="Group 25252">
+        <path id="Path_52231" data-name="Path 52231" d="M154.325,439.4H57.675V237.5L106,199.291,154.325,237.5Z" fill="#ff7c48"/>
+        <path id="Path_52232" data-name="Path 52232" d="M154.325,439.4H106V190.928L154.325,237.5Z" fill="#ff415b"/>
+        <path id="Path_52233" data-name="Path 52233" d="M303.2,439.4H208.8V219.427l47.2-47.2,47.2-30.372Z" fill="#ffda44"/>
+        <path id="Path_52234" data-name="Path 52234" d="M303.2,439.4H256V172.23l47.2-30.372Z" fill="#ff9f22"/>
+        <path id="Path_52235" data-name="Path 52235" d="M452.67,439.4H359.33V115.768L406,160.756l46.67-44.988Z" fill="#69b1e9"/>
+        <path id="Path_52236" data-name="Path 52236" d="M452.67,439.4H406V160.756l46.67-44.988Z" fill="#2681ff"/>
+      </g>
+      <g id="Group_25255" data-name="Group 25255">
+        <g id="Group_25254" data-name="Group 25254">
+          <g id="Group_25253" data-name="Group 25253">
+            <path id="Path_52237" data-name="Path 52237" d="M0,424.4H512v30H0Z" fill="#00429c"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_25256" data-name="Group 25256">
+        <path id="Path_52238" data-name="Path 52238" d="M256,424.4H512v30H256Z" fill="#00347b"/>
+      </g>
+    </g>
+    <g id="Group_25260" data-name="Group 25260">
+      <g id="Group_25259" data-name="Group 25259">
+        <g id="Group_25258" data-name="Group 25258">
+          <path id="Path_52239" data-name="Path 52239" d="M27.106,286.583,5.894,265.371l95.656-95.657,67.876,67.877L337.41,69.606l69.938,69.937,70.018-70.019,21.213,21.213L407.348,181.97,337.41,112.033,169.426,280.018,101.55,212.141Z" fill="#2681ff"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_52240" data-name="Path 52240" d="M409.172,57.6v30h50.115l-51.939,51.939L337.41,69.606,256,151.016v42.427l81.41-81.41,69.938,69.937L480.5,108.817v50.115h30V57.6Z" fill="#0051be"/>
+  </g>
+</svg>

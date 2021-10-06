@@ -1,0 +1,365 @@
+.bg-dark-color{
+  background: #1E2533
+}
+.tx-gray{
+  color: #4A4A4A;
+}
+.tx-grayy{
+  color: #9EA0A5;
+}
+.aside-body{
+  max-width: 100px!important;
+  padding: 0px!important;
+}
+@media (min-width:1200px){
+  .aside-fixed + .content{
+    margin-left: 0px;
+  }
+  .content-body{
+    margin-left: 110px!important;
+    /* margin-bottom: 200px; */
+  }
+}
+.aside-header{
+  height: 70px!important;
+  min-width: 200px!important;
+}
+.content-header{
+display: block;
+min-height: 250px;
+border-bottom: 0;
+background-color: transparent;
+}
+.header-row{
+  padding: 0px 24px;
+}
+.nav-asid .nav-item.active .nav-link{
+  color: #fff!important;
+  font-weight: 700;
+}
+.nav-asid .nav-item.active svg{
+  color: #fff!important;
+  font-weight: 700;
+}
+.nav-asid .nav-item.active .nav-link::before{
+  border-left: 0;
+}
+.nav-asid .nav-link{
+  color:#FFFFFF80;
+}
+.nav-asid svg{
+  color:#FFFFFF80;
+  width: 24px;
+  height: 24px;
+}
+.nav-asid .nav-item + .nav-item{
+  margin-top: 20px;
+}
+.nav.nav-asid li{
+  text-align: center!important;
+  }
+.welcome{
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/placehold.jpg');
+  background-position: center;
+}
+.header{
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: block;
+  z-index: 9999;
+  /* background-color: aqua; */
+}
+.aside-fixed{
+  top: 65px;
+  height: 100vh;
+}
+.offset-div{
+  margin-top: -10%;
+}
+.overlay {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 0%;
+  margin-top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(62, 88, 88, 0.5);
+  /* z-index: 2; */
+  cursor: pointer;
+}
+.dashboard-img{
+  height: 175px!important;
+}
+@media (max-width: 576px) {
+  .offset-div{
+    margin-top: -70%;
+  }
+  
+  .dashboard-img {
+    min-height: 40vh !important;
+  }
+  .mobile-row{
+    margin-top: 50px;
+  }
+  .chairman-image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .content-body{
+    /* margin-top: 70px; */
+  }
+  .header-row{
+    padding: 0px 12px;
+  }
+  .aside-body{
+    height: 100vh;
+  }
+  
+}
+.bg-red{
+  background-color: #B11E1E;
+}
+.image-box{
+  background: #FFFFFF4D;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.image-boxx{
+  background: #F7E8E8;
+  height: 50%;
+  border-radius: 5px;
+  color: #B11E1E;
+}
+.tx-gray-activity{
+  color: #95A8B8;
+}
+.dropdown-link svg {
+  width: 26px!important;
+  height: 26px!important;
+  color: #B11E1E;
+}
+.nav-logo{
+  width: 75px;
+  height: 35px;
+}
+.block-nav{
+  display: block!important;
+}
+.search-form button {
+  border-left-width: 1px
+}
+.content{
+  background-color: #EFEFEF;
+  /* height: 100vh!important; */
+}
+.bg-pink{
+  background-color:#FF91A4 ;
+}
+
+.bg-deep-red{
+  background-color:#B11E1E ;
+}
+.bg-light-blue{
+  background-color: #2CD8C5;
+}
+.bg-yellow{
+  background-color: #FFC250;
+}
+.chartDo{
+  height: 200px!important;
+}
+
+/* ===========================================================
+employee section
+================================================================  */
+.thead-bg{
+  background-color: #F3F3F4;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #B11E1E1A;
+  border-top: 1px solid #B11E1E;
+  border-bottom: 1px solid #B11E1E;
+
+}
+.fa-star.checked{
+  color: #EAA22E;
+}
+.favourite-icon{
+  color: #B11E1E;
+}
+.print-icon{
+  width: 20px!important;
+  height: 20px!important;
+}
+
+/*filter modal*/
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 370px;
+  top: 60px;
+  height: 93%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.large-right .modal-dialog {
+  width: 420px!important;
+  top: 60px;
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+.modal.right.fade .modal-dialog {
+  right: 0px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.search-form .tt-hint, .search-form .tt-input{
+  border-right-width: 0px!important
+}
+.add-icon{
+  width: 16px;
+  height: 16px;
+}
+.collapse-btn,.back-icon{
+  cursor: pointer;
+}
+.fixed-card{
+  position: fixed;
+  width: 370px;
+  height: 100%;
+  z-index: 999;
+  
+}
+.profile-link{
+  color: #1E2533;
+}
+.profile-link:hover{
+  border-left: 3px solid #B11E1E;
+  border-right: 1px solid #B11E1E;
+  border-top: 1px solid #B11E1E;
+  border-bottom: 1px solid #B11E1E;
+  color: #1E2533;
+}
+.profile-employ{
+  width: 100px;
+  height: 100px;
+}
+.profile-card-header{
+  background-image: url('../img/placehold.jpg');
+}
+.image-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.card-div{
+  margin-top: -20px;
+}
+.fill-heart, .fill-clock{
+  fill: white;
+}
+.bd-bot{
+  border-bottom: 2px solid #B11E1E;
+}
+.card-header-pink{
+  background-color: #B11E1E33;
+  border-radius: 4px!important;
+  border-bottom: 0;
+}
+.badge-pink{
+  background-color: rgba(177, 30, 30, 0.2);
+  color: #B11E1E;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+.flag-icon{
+  width: 24px;
+  height: 24px;
+}
+.profile-export{
+  background-color: #fff;
+}
+.icon-lg{
+  width: 24px!important;
+  height: 24px!important;
+}
+.img-stack{
+  width: 60px;
+  height: 60px;
+}
+.table.dataTable thead th{
+  font-weight: 600;
+}
+.table{
+  width: 100%!important;
+}
+/*==============================================================
+ end of employee section  
+ =============================================================*/
+
+
+ /* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: -13px;
+  font-size: 36px;
+  margin-left: 90px;
+  color: #fff!important;
+  padding-top: 10px!important;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}

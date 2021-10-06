@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Staff Module Management">
+    <title>UBA - Know Your Employee</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="../assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../assets/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/employee-profile.css">
+    <link rel="stylesheet" href="../assets/css/dashforge.css">
+    <style>
+      *{
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      }
+      body { -webkit-font-smoothing: antialiased; }
+      </style>
+  </head>
+  <body class="">
+    <header class="navbar navbar-header navbar-header-fixed shadow bg-white header-width">
+      <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+      
+      <div id="navbarMenu" class="navbar-menu-wrapper">
+        <div class="navbar-menu-header">
+          <a href="./dashboard.html" class="df-logo"><img class="uba-logo img-fluid nav-logo" alt="UBA Logo Dark" src="../assets/img/uba_logo_red.svg">
+          </a>
+          <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+        </div><!-- navbar-menu-header -->
+        <ul class="nav navbar-menu">
+          
+          <li class="nav-item active">
+            <a href="./dashboard.html" class="nav-link active">
+            <i data-feather="grid"></i>
+            <span>Home</span>
+          </a>          
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i> Talent Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i> Benefit</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i>Help</a>
+          </li>
+        </ul>
+      </div><!-- navbar-menu-wrapper -->
+      <div class="navbar-right">
+        <img class="uba-logo img-fluid nav-logo" alt="UBA Logo Dark" src="../assets/img/uba_logo_red.svg">
+
+    </header><!-- navbar -->
+    <section class="head">
+      <div class="container py-5 mg-lg-t-50">
+        <div class="row justify-content-between">
+          <div class="col-md-8 col-12 mg-t-15">
+            <div class="row col-md-7">
+              <div class="col-3 col-md-2">
+                <div class="pd-t-15"><img src="../assets/img/icons/Naira.svg" class="img-fluid wd-150"></div>
+              </div>
+              <div class="col-9 col-md-10 pd-t-10">
+                <p class="tx-24 tx-bold mb-0">Earnings</p>
+                <p class="mb-0 tx-14 text-new">See details and breakdown of your salary</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mg-t-15">
+            <div class="d-flex justify-content-between pd-t-10">
+              <p class="tx-20 mb-1 pd-b-1">100%</p>
+              <!-- <p class="tx-14 mb-1 pd-t-5">You are yet to complete your profile update</p> -->
+             </div>
+             <div class="progress ht-10">
+              <div class="progress-bar wd-100p progress-bar-striped" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-section mg-t-40">
+          <ul class="nav nav-tabs nav-scroll bd-0" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a href="./dashboard.html" class="btn btn-tab nav-link pd-x-5 tx-13">
+                <span><i data-feather="user"></i></span>
+                <span class="pd-x-5 pd-t-2"> Personal</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/contacts.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a href="./education.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Education03.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Education</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./affiliation.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/affiliation.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Affiliations</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./employment.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Employment05.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Employment</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./language.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Languages06.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Languages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./competence.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Competence07.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Competence</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./training.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Trainings08.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Trainings</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./record.html" class="btn btn-tab nav-link pd-x-0 tx-13 record-btn">
+                <span><img src="../assets/img/icons/Performance-Record09.svg"></span>
+                <span class="pd-x-5 pd-t-2 d-flex"> Performance Record</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./others.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Others10.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Others</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./earning.html" class="btn btn-tab nav-link active pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Naira.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Earnings</span>
+              </a>
+            </li>
+          </ul>
+         
+        </div>
+     
+      </div>
+    </section>
+    <section class="content">
+      <div class="container pd-x-0">
+        <div class="card card-body shadow-sm">
+          <div class="row">
+            <div class="col-md-6 col-12 mg-b-20 mg-md-b-0">
+              <div class="table-responsive">
+                <table class="table earning">
+                  <thead >
+                    <tr class="tx-semibold">
+                      <th scope="col">DESCRIPTION</th>
+                      <th scope="col">AMOUNT(&#x20A6;) </th>
+                      <th scope="col">FREQUENCY (Payable)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Basic Salary</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Housing</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Transport</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Mgt Mortgage Support</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Furniture</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Utility</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Domestic</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Entertainment</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Education</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Dressing</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Lunch</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Club Subscription</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Telephone</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr><tr>
+                      <td>House Maintenance</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr><tr>
+                      <td>Car Fuelling and Maintenance</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr><tr>
+                      <td>Overseas Medical</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr><tr>
+                      <td>Value Card</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mg-b-20 mg-md-b-0">
+              <div class="table-responsive">
+                <table class="table earning">
+                  <thead class="mob">
+                    <tr class="tx-semibold">
+                      <th scope="col">DESCRIPTION</th>
+                      <th scope="col">AMOUNT(&#x20A6;) </th>
+                      <th scope="col">FREQUENCY (Payable)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Guard</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Cook</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Driver</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Passage</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Generator Set</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Generator Maintenance</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Performance Pay</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Other Allowance</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>Quarterly Allowance</td>
+                      <td>0.00</td>
+                      <td>Quarterly</td>
+                    </tr>
+                    <tr>
+                      <td>Child Education Subsidy</td>
+                      <td>0.00</td>
+                      <td>Per Annum</td>
+                    </tr>
+                    <tr>
+                      <td>Lunch</td>
+                      <td>0.00</td>
+                      <td>Per Annum</td>
+                    </tr>
+                    <tr>
+                      <td>Prof Membership  & Recreation Club</td>
+                      <td>0.00</td>
+                      <td>Per Annum</td>
+                    </tr>
+                    <tr>
+                      <td>Travel Subsidy</td>
+                      <td>0.00</td>
+                      <td>Per Annum</td>
+                    </tr>
+                    <tr>
+                      <td>Leave Allowance</td>
+                      <td>0.00</td>
+                      <td>Monthly</td>
+                    </tr>
+                    <tr>
+                      <td>13th Month</td>
+                      <td>0.00</td>
+                      <td>Yearly in arrears</td>
+                    </tr>
+                    <tr>
+                      <td>Status Car Purchase Limit</td>
+                      <td>0.00</td>
+                      <td>Per Annum</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="row py-20">
+            <div class="col-lg-3 col-6 mg-t-20">
+              <div class="">
+                <p class="tx-14 mb-1 text-new">Total Earnings</p>
+                <p class="tx-18 text-title tx-semibold">&#x20A6; 0</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mg-t-20">
+              <div class="">
+                <p class="tx-14 mb-1 text-new">Total Deductions</p>
+                <p class="tx-18 text-title tx-semibold ">&#x20A6; 0</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mg-t-20">
+              <div class="">
+                <p class="tx-14 mb-1 text-new">Basic Pay</p>
+                <p class="tx-18 text-title tx-semibold ">&#x20A6; 0</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mg-t-20">
+              <div class="">
+                <p class="tx-14 mb-1 text-new">Net Pay</p>
+                <p class="tx-18 text-title tx-semibold ">&#x20A6; 0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="footer text-white">
+      <div class="container">
+        <p class="p-14 mb-0 text-capitalize">&copy; 2021 UBA Group. All Rights Reserved.</p>
+      </div>
+    </section>
+   -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/lib/feather-icons/feather.min.js"></script>
+    <script src="../assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/dashforge.js"></script>
+    <script src="../assets/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../assets/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../assets/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script>
+      $('#employee').DataTable({
+        responsive: true,
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+          columnDefs: [{
+              responsivePriority: 1,
+              targets: 0
+            },
+            {
+              responsivePriority: 2,
+              targets: -1
+            }
+          ]
+        }
+      });
+    </script>
+  
+
+  </body>
+</html>

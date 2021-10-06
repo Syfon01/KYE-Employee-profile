@@ -1,0 +1,14 @@
+<svg id="contact" xmlns="http://www.w3.org/2000/svg" width="35.953" height="29.212" viewBox="0 0 35.953 29.212">
+  <path id="Path_51956" data-name="Path 51956" d="M32,0H63.459V6.741H32Zm0,0" transform="translate(-29.753)" fill="#168de2"/>
+  <path id="Path_51957" data-name="Path 51957" d="M0,64H35.953V88.718H0Zm0,0" transform="translate(0 -59.506)" fill="#40a2e7"/>
+  <path id="Path_51958" data-name="Path 51958" d="M77.482,262.741v4.494H64v-4.494a6.741,6.741,0,0,1,13.482,0Zm0,0" transform="translate(-59.506 -238.023)" fill="#f9ddaa"/>
+  <path id="Path_51959" data-name="Path 51959" d="M288,192h11.235v2.247H288Zm0,0" transform="translate(-267.776 -178.518)" fill="#fff"/>
+  <path id="Path_51960" data-name="Path 51960" d="M299.235,258.247h-2.247V256h2.247Zm-4.494,0H288V256h6.741Zm0,0" transform="translate(-267.776 -238.023)" fill="#fff"/>
+  <path id="Path_51961" data-name="Path 51961" d="M98.662,258.247c0,1.236-2.247,2.247-5.011,2.247s-5.011-1.011-5.011-2.247a6.711,6.711,0,0,1,10.022,0Zm0,0" transform="translate(-82.416 -238.023)" fill="#f7ce8a"/>
+  <path id="Path_51962" data-name="Path 51962" d="M104.988,164.494A4.494,4.494,0,1,1,100.494,160,4.494,4.494,0,0,1,104.988,164.494Zm0,0" transform="translate(-89.259 -148.765)" fill="#f9ddaa"/>
+  <g id="Group_25223" data-name="Group 25223" transform="translate(2.247 6.741)">
+    <path id="Path_51963" data-name="Path 51963" d="M32,96h2.247v2.247H32Zm0,0" transform="translate(-32 -96)" fill="#fff"/>
+    <path id="Path_51964" data-name="Path 51964" d="M96,96h2.247v2.247H96Zm0,0" transform="translate(-91.506 -96)" fill="#fff"/>
+    <path id="Path_51965" data-name="Path 51965" d="M32,160h2.247v2.247H32Zm0,0" transform="translate(-32 -155.506)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg id="Component_88_1" data-name="Component 88 – 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Ellipse_677" data-name="Ellipse 677" fill="#fff" stroke="#697c2d" stroke-width="1">
+    <circle cx="12" cy="12" r="12" stroke="none"/>
+    <circle cx="12" cy="12" r="11.5" fill="none"/>
+  </g>
+  <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M12.852,3.375a9.477,9.477,0,1,0,9.477,9.477A9.475,9.475,0,0,0,12.852,3.375ZM17.7,10.232l-6.092,6.119h0a.823.823,0,0,1-.529.251.8.8,0,0,1-.533-.26L7.995,13.79a.182.182,0,0,1,0-.26l.811-.811a.176.176,0,0,1,.255,0l2.023,2.023,5.559-5.6a.18.18,0,0,1,.128-.055h0a.165.165,0,0,1,.128.055l.8.825A.18.18,0,0,1,17.7,10.232Z" transform="translate(-0.76 -0.809)" fill="#b11e1e"/>
+</svg>

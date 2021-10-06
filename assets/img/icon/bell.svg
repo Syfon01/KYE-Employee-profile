@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="Group_25143" data-name="Group 25143" transform="translate(1017 551)">
+    <circle id="Ellipse_684" data-name="Ellipse 684" cx="23.5" cy="23.5" r="23.5" transform="translate(-1017 -551)" fill="#b11e1e" opacity="0.196"/>
+    <circle id="Ellipse_685" data-name="Ellipse 685" cx="17.5" cy="17.5" r="17.5" transform="translate(-1011 -545)" fill="#b11e1e"/>
+    <path id="Icon_material-notifications-active" data-name="Icon material-notifications-active" d="M9.261,5.52l-1.6-1.6A11.677,11.677,0,0,0,3.045,12.71h2.24A9.459,9.459,0,0,1,9.261,5.52ZM23.139,12.71h2.24a11.748,11.748,0,0,0-4.615-8.792l-1.59,1.6A9.515,9.515,0,0,1,23.139,12.71Zm-2.207.56c0-3.439-1.837-6.317-5.04-7.079V5.43a1.68,1.68,0,1,0-3.36,0v.762c-3.215.762-5.04,3.629-5.04,7.079v5.6l-2.24,2.24v1.12H23.172v-1.12l-2.24-2.24Zm-6.72,12.321a1.962,1.962,0,0,0,.448-.045,2.273,2.273,0,0,0,1.613-1.322,2.249,2.249,0,0,0,.168-.874h-4.48A2.256,2.256,0,0,0,14.212,25.591Z" transform="translate(-1007.246 -540.477)" fill="#fff"/>
+  </g>
+</svg>
