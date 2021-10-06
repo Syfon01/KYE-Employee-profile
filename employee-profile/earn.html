@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Staff Module Management">
+    <title>UBA - Know Your Employee</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="../assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../assets/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/employee-profile.css">
+    <link rel="stylesheet" href="../assets/css/dashforge.css">
+    <style>
+      *{
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      }
+      body { -webkit-font-smoothing: antialiased; }
+      </style>
+  </head>
+  <body class="">
+    <header class="navbar navbar-header navbar-header-fixed shadow bg-white">
+      <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+      
+      <div id="navbarMenu" class="navbar-menu-wrapper">
+        <div class="navbar-menu-header">
+          <a href="./dashboard.html" class="df-logo"><img class="uba-logo img-fluid nav-logo" alt="UBA Logo Dark" src="../assets/img/uba_logo_red.svg">
+          </a>
+          <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+        </div><!-- navbar-menu-header -->
+        <ul class="nav navbar-menu">
+          
+          <li class="nav-item active">
+            <a href="./dashboard.html" class="nav-link active">
+            <i data-feather="grid"></i>
+            <span>Home</span>
+          </a>          
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i> Talent Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i> Benefit</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../collections/" class="nav-link"><i data-feather="archive"></i>Help</a>
+          </li>
+        </ul>
+      </div><!-- navbar-menu-wrapper -->
+      <div class="navbar-right">
+        <img class="uba-logo img-fluid nav-logo" alt="UBA Logo Dark" src="../assets/img/uba_logo_red.svg">
+
+    </header><!-- navbar -->
+    <section class="head">
+      <div class="container py-5 mg-lg-t-50">
+        <div class="row justify-content-between">
+          <div class="col-md-8 col-12 mg-t-15">
+            <div class="row col-md-7">
+              <div class="col-3 col-md-2">
+                <div class="pd-t-20"><img src="../assets/img/icons/others.svg" class="img-fluid"></div>
+              </div>
+              <div class="col-9 col-md-10 pd-t-10">
+                <p class="tx-24 tx-bold mb-0">Others</p>
+                <p class="mb-0 tx-14 text-new">Provide additional information to round off this process</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mg-t-15">
+            <div class="d-flex justify-content-between pd-t-10">
+              <p class="tx-20 mb-1 pd-b-1">99%</p>
+              <p class="tx-14 mb-1 pd-t-5">You are yet to complete your profile update</p>
+             </div>
+             <div class="progress ht-10">
+              <div class="progress-bar wd-100p progress-bar-striped" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-section mg-t-40">
+          <ul class="nav nav-tabs nav-scroll bd-0" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a href="./dashboard.html" class="btn btn-tab nav-link pd-x-5 tx-13">
+                <span><i data-feather="user"></i></span>
+                <span class="pd-x-5 pd-t-2"> Personal</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/contacts.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a href="./education.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Education03.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Education</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./affiliation.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/affiliation.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Affiliations</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./employment.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Employment05.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Employment</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./language.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Languages06.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Languages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./competence.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Competence07.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Competence</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./training.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Trainings08.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Trainings</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./record.html" class="btn btn-tab nav-link pd-x-0 tx-13 record-btn">
+                <span><img src="../assets/img/icons/Performance-Record09.svg"></span>
+                <span class="pd-x-5 pd-t-2 d-flex"> Performance Record</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./others.html" class="btn btn-tab nav-link active pd-x-0 tx-13">
+                <span><img src="../assets/img/icons/Others10.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Others</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./earning.html" class="btn btn-tab nav-link pd-x-0 tx-13">
+                 <span><img src="../assets/img/icons/Naira.svg"></span>
+                <span class="pd-x-5 pd-t-2"> Earnings</span>
+              </a>
+            </li>
+          </ul>
+         
+        </div>
+     
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="card card-body shadow col-md-8 pd-lg-25 col-12 mx-auto">
+          <p class="tx-14">Please complete all details to help complete your profile update.</p>
+          <form action="">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="status">Number of years leading team</label>
+                  <select class="custom-select">
+                    <option selected>Select Years</option>
+                    <option value="1">0-2</option>
+                    <option value="2">3-5</option>
+                    <option value="3">5-10</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="gender">Where</label>
+                  <div class="row">
+                    <div class="col">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="current" name="job" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="current">Current job</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="previous" name="job" class="custom-control-input">
+                        <label class="custom-control-label" for="previous">Previous jobs</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="both" name="job" class="custom-control-input">
+                        <label class="custom-control-label" for="both">Both</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="strength">Top 3 Strengths (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="core strength areas"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="weakness">Top 3 Weaknesses/Areas of Improvement (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Areas of weakness/ areas of Improvement"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="action-steps">Key action steps taken to improve in the identical area (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Key actions steps taken to improve"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="key-projects">Key Projects Closed (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Kep projects closed"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="statement">Professional Statement (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Professional Statement"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="short-term">Short Term Career Aspiration (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Key actions steps taken to improve"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="middle-term">Middle Term Career Aspiration (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Kep projects closed"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="long-term">Long Term Career Aspiration (minimum number of text should be 200 characters)</label>
+                <textarea name="" id="" class="form-control" rows="5" placeholder="Professional Statement"></textarea>
+              </div>
+              <div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="status">Other Skills</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Type skill">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="gender">Proficiency Level</label>
+                    <select class="custom-select">
+                      <option selected>Select Level</option>
+                      <option value="1">Beginner</option>
+                      <option value="2">Good</option>
+                      <option value="3">Expert</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="float-right ">
+                  <button type="submit" class="btn btn-pink tx-primary pd-x-30">
+                    <i data-feather="plus"></i></a>
+                    Add New
+                  </button>
+                </div>
+                <div class="form-control mg-t-50 ht-100">
+                  <span class="btn-pink pd-7 rounded">
+                    <span class="tx-primary mg-r-5">Art and Craft</span>
+                    <span class="tx-dark">Very good</span>
+                    <i data-feather="x" class="wd-15 ht-15 tx-primary"></i></a>
+                  </span>
+                </div>
+              </div>
+            <div class="modal-footer mg-t-50">
+              <button type="submit" class="btn btn-primary pd-x-30">Save</button>
+              <button type="submit" class="btn btn-cancel pd-x-30">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="footer text-white">
+      <div class="container">
+        <p class="p-14 mb-0 text-capitalize">&copy; 2021 UBA Group. All Rights Reserved.</p>
+      </div>
+    </section>
+   -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/lib/feather-icons/feather.min.js"></script>
+    <script src="../assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/dashforge.js"></script>
+    <script src="../assets/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../assets/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../assets/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script>
+      $('#employee').DataTable({
+        responsive: true,
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+          columnDefs: [{
+              responsivePriority: 1,
+              targets: 0
+            },
+            {
+              responsivePriority: 2,
+              targets: -1
+            }
+          ]
+        }
+      });
+    </script>
+  
+
+  </body>
+</html>
